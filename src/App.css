@@ -1,21 +1,89 @@
 .container {
-  width: 100vw;
-  height: 100vh;
-  display: grid;
-
-  text-align: center;
-}
-.canvas {
   position: absolute;
-  top: 0;
-  left: 0;
-  mix-blend-mode: exclusion;
-}
-.text {
-  width: auto;
+  top: 20%;
+  left: 25%;
+  width: 50vw;
+  height: auto;
   height: auto;
   margin: auto;
+  z-index: 10;
+  overflow: hidden;
+  text-align: right;
 }
+.canvas {
+  mix-blend-mode: exclusion;
+}
+.main {
+  mix-blend-mode: exclusion;
+  border-left: 0.9rem solid red;
+}
+.text {
+  /* width: auto;
+  height: auto; */
+  margin: auto;
+  z-index: 10;
+}
+
 h1 {
-  font-size: 5em;
+  color: #b30d18;
+  font-size: 3em;
+  text-transform: uppercase;
+}
+h2 {
+  color: rgba(255, 255, 255, 1);
+  font-size: 1.9em;
+}
+
+Button {
+  display: inline-block;
+  width: 12em;
+  height: 4.5em;
+  padding: 0.46em;
+  border: 0.1em solid #d30c0c;
+  margin: 0 0.2em 0.2em 0;
+  border-radius: 0.7em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+  background-color: transparent;
+  text-align: center;
+  transition: all 0.15s;
+  cursor: pointer;
+}
+
+Button:hover {
+  text-shadow: 0 0 2em rgba(255, 255, 255, 1);
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+@media screen and (max-width: 30em) {
+  .container {
+    width: 100vw;
+    top: 10;
+    left: 0%;
+    margin: 10px;
+    padding: 2px;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    color: rgba(255, 255, 255, 1);
+    font-size: 0.9em;
+  }
+   Button {
+    display: block;
+    margin: 0.4em auto;
+  }
+}
+
+@media all and (max-width: 30em) {
+   Button {
+    display: block;
+    margin: 0.4em auto;
+  }
 }

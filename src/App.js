@@ -1,14 +1,13 @@
 import React, { Component } from "react";
 import Planet3d from "./Planet3d";
+import ThemeText from "./ThemeText";
 
 export class App extends Component {
+  componentDidMount() {}
   render() {
     return (
-      <div className="container">
-        <div className="text">
-          {" "}
-          <h1 style={{ color: "red" }}>get your grooves on</h1>
-        </div>
+      <div>
+        <ThemeText />
         <Planet3d />
       </div>
     );
